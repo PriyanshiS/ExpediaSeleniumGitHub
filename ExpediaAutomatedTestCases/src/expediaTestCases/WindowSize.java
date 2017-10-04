@@ -15,7 +15,7 @@ public class WindowSize {
 
 	@Before
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.gecko.driver", "/Applications/Utilities/untitled folder/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Anky\\Eclipse WorkSpaces\\Priyanshi\\Selenium drivers\\geckodriver-v0.18.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		js = (JavascriptExecutor) driver;
 		
