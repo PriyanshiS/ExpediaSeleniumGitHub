@@ -35,10 +35,10 @@ public class CreateNewAccountTabTest {
 		Thread.sleep(3000);
 		createsearch.setLastNameField("Sak");
 		Thread.sleep(3000);
-		createsearch.setEmailField("priyanshisaxena11@outlook.com");
-		createsearch.setPasswordField("aanu10aby11");
+		createsearch.setEmailField("pari_sxn@outlook.com");
+		createsearch.setPasswordField("test123");
 		Thread.sleep(3000);
-		createsearch.setConfirmPasswordField("aanu10aby11");
+		createsearch.setConfirmPasswordField("test123");
 		Thread.sleep(3000);
 		createsearch.clickPolicyTab();
 		Thread.sleep(3000);

@@ -1,0 +1,52 @@
+package pageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPageFactory {
+	public WebDriver driver;
+	
+	@FindBy (id = "header-account-menu")
+    WebElement accountTab;
+	
+	@FindBy (id = "account-signin")
+	WebElement signinTab;
+	
+	@FindBy (id = "signin-loginid")
+	WebElement usernameField;
+	
+	@FindBy (id = "signin-password")
+	WebElement passwordField;
+	
+	@FindBy (id = "submitButton")
+	WebElement sumitButtonTab;
+	
+	public LoginPageFactory (WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void clickAccountTab() {
+		accountTab.click();
+	}
+	
+	public void clickSignInTab() {
+		signinTab.click();
+	}
+	
+	public void setUsernameField(String username) {
+		usernameField.sendKeys(username);
+	}
+	
+	
+	public void setPasswordField(String password) {
+		passwordField.sendKeys(password);
+	}
+	
+	public void clicksumitButton() {
+		sumitButtonTab.click();
+	}
+
+}

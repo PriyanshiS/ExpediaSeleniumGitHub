@@ -22,26 +22,22 @@ public class LoginTabTest {
 	}
 	
 	@Test
-	public void test() throws InterruptedException {
+	public void testLogin() throws InterruptedException {
 		driver.get(baseURL);
 		Thread.sleep(3000);
 		loginsearch.clickAccountTab();
 		Thread.sleep(3000);
 		loginsearch.clickSignInTab();
 		Thread.sleep(3000);
-		loginsearch.setUsernameField("enter a valid username");
+		loginsearch.setUsernameField("priyanshi1106@gmail.com");
 		Thread.sleep(3000);
-		loginsearch.setPasswordField("enter a valid password");
+		loginsearch.setPasswordField("test123");
 		Thread.sleep(3000);
 		loginsearch.clicksumitButton();
-		
 	}
 
 	@After
 	public void tearDown() throws Exception {
 		driver.quit();
 	}
-
-	
-
 }

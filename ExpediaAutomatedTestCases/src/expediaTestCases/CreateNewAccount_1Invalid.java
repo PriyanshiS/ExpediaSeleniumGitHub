@@ -24,7 +24,7 @@ public class CreateNewAccount_1Invalid {
 		}
 		
 		@Test
-		public void test() throws InterruptedException {
+		public void testInvalidLoginDetails() throws InterruptedException {
 			driver.get(baseURL);
 			Thread.sleep(3000);
 			createsearch_1.clickAccountTab();
@@ -36,9 +36,9 @@ public class CreateNewAccount_1Invalid {
 			createsearch_1.setLastNameField("Sak");
 			Thread.sleep(3000);
 			createsearch_1.setEmailField("priyanshi0611@gmail.com");
-			createsearch_1.setPasswordField("aanu19aby89");
+			createsearch_1.setPasswordField("test123");
 			Thread.sleep(3000);
-			createsearch_1.setConfirmPasswordField("aanu19aby89");
+			createsearch_1.setConfirmPasswordField("test123");
 			Thread.sleep(3000);
 			createsearch_1.clickPolicyTab();
 			Thread.sleep(3000);

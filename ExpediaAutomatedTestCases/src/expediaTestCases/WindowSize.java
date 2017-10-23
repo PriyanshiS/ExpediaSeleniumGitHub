@@ -19,13 +19,11 @@ public class WindowSize {
 		driver = new FirefoxDriver();
 		js = (JavascriptExecutor) driver;
 		
-		// Maximize the browser's window
-		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@Test
-	public void testJavaScriptExecution() throws Exception {
+	public void testWindowSize() throws Exception {
 		// Navigation
 		js.executeScript("window.location = 'https://www.expedia.ca/'");
 		Thread.sleep(3000);

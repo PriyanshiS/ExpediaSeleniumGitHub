@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 /**
- * TC_1: To verufy the flight tab details on expedia.ca
+ * TC_1: To verify the flight tab details on expedia.ca
  * @author priyanshi
  *
  */
@@ -29,23 +29,19 @@ public class FlightTabTest {
 	}
 
 	@Test
-	public void test() throws InterruptedException {
+	public void testFlightBooking() throws InterruptedException {
 		driver.get(baseURL);
 		Thread.sleep(2000);
 		flightsearch.clickFlightsTab();
 		flightsearch.clickReturnFlightsTab();
-		//flightsearch.originFlightTab.sendKeys("Montreal");
 		flightsearch.setOriginCity("Montreal");
 		flightsearch.setDestinationCity("New York");
 		flightsearch.setdepartingDate("14/12/2017");
 		flightsearch.setreturningDate("02/01/2018");
 		flightsearch.clickSearchTab();
-		
 	}
 
 	@After
 	public void tearDown() throws Exception {
-	}
-
-	
+	}	
 }

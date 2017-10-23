@@ -23,13 +23,12 @@ public class HotelTabTest {
 		}
 
 		@Test
-		public void test() throws InterruptedException {
+		public void testHotelBooking() throws InterruptedException {
 			driver.get(baseURL);
 			Thread.sleep(3000);
 			hotelsearch.clickHotelsTab();
 			Thread.sleep(2000);
 			hotelsearch.setDestinationCity("Charlevoix, Quebec, Canada");
-			//flightsearch.originFlightTab.sendKeys("Montreal");
 			hotelsearch.setCheckingDate("23/09/2017");
 			Thread.sleep(2000);
 			hotelsearch.setCheckoutDate("24/09/2017");
@@ -38,16 +37,13 @@ public class HotelTabTest {
 			hotelsearch.setOriginCity("Montreal");
 			Thread.sleep(2000);
 			hotelsearch.clickSearchTab();
-			
 		}
 
 		@After
 		public void tearDown() throws Exception {
 			driver.quit();
 		}
-
-		
-	}
+}
 
 
 

@@ -24,7 +24,7 @@ public class AllInclusiveVacation {
 	}
 
 	@Test
-	public void test() throws InterruptedException {
+	public void testAllInclusiveDeals() throws InterruptedException {
 		driver.get(baseURL);
 		Thread.sleep(4000);
 		allinclusivevacationssearch.clickAllInclusiveVacationsTab();

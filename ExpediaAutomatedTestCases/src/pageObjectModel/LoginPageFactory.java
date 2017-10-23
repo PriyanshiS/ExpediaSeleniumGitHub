@@ -40,7 +40,6 @@ public class LoginPageFactory {
 		usernameField.sendKeys(username);
 	}
 	
-	
 	public void setPasswordField(String password) {
 		passwordField.sendKeys(password);
 	}

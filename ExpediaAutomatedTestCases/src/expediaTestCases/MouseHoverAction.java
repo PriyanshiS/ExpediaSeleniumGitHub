@@ -33,9 +33,8 @@ public class MouseHoverAction {
 	}
     
 	@Test
-	public void test() throws InterruptedException {
+	public void testMouseHoverAction() throws InterruptedException {
 		driver.get(baseURL);
-//		jse.executeScript("window.scrollBy(0, 400)");
 		Thread.sleep(2000);
 		driver.navigate().to(navigateURL);
 		currentURL = driver.getCurrentUrl();
