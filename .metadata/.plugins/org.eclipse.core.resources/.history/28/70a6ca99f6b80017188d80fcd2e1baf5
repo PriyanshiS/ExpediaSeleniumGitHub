@@ -40,50 +40,50 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		}
 		
 		public void clickHotelsTab() {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
+			WebDriverWait wait = new WebDriverWait(driver, 3);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tab-hotel-tab-hp")));
 			HotelSelectionTab.click();
 		}
 		
 		public void setDestinationCity(String destination) {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hotel-destination-hp-hotel")));
+			WebDriverWait wait = new WebDriverWait(driver, 3);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("")));
 			destinationCity.sendKeys(destination);
 		}
 		
 		public void setCheckingDate(String checkingDate) {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hotel-checkin-hp-hotel")));
+			WebDriverWait wait = new WebDriverWait(driver, 3);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tab-hotel-tab-hp")));
 			checkingDateTab.sendKeys(checkingDate);
 		}
 		
 		public void setCheckoutDate(String checkOut) {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hotel-checkout-hp-hotel")));
+			WebDriverWait wait = new WebDriverWait(driver, 3);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tab-hotel-tab-hp")));
 			checkoutDateTab.sendKeys(checkOut);
 		}
 		
 		public void setNoOfAdults(String adults) {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hotel-1-adults-hp-hotel")));
+			WebDriverWait wait = new WebDriverWait(driver, 3);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tab-hotel-tab-hp")));
 			NoOfAdultsTab.sendKeys(adults);
 		}
 		
 		public void clickAddFlightTab() {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hotel-add-flight-checkbox-hp-hotel")));
+			WebDriverWait wait = new WebDriverWait(driver, 3);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tab-hotel-tab-hp")));
 			AddFlightsTab.click();
 		}
 		
 		public void setOriginCity(String origin) {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hotel-flight-origin-hp-hotel")));
+			WebDriverWait wait = new WebDriverWait(driver, 3);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tab-hotel-tab-hp")));
 			originCity.sendKeys(origin);
 		}
 		
 		public void clickSearchTab() {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='gcw-hotel-form-hp-hotel']/div[9]/label/button")));
+			WebDriverWait wait = new WebDriverWait(driver, 3);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tab-hotel-tab-hp")));
 			searchTab.click();
 		}
 

@@ -24,10 +24,15 @@ public class LoginTabTest {
 	@Test
 	public void testLogin() throws InterruptedException {
 		driver.get(baseURL);
+		Thread.sleep(3000);
 		loginsearch.clickAccountTab();
+		Thread.sleep(4000);
 		loginsearch.clickSignInTab();
+		Thread.sleep(3000);
 		loginsearch.setUsernameField("priyanshi1106@gmail.com");
+		Thread.sleep(3000);
 		loginsearch.setPasswordField("test123");
+		Thread.sleep(3000);
 		loginsearch.clicksumitButton();
 	}
 

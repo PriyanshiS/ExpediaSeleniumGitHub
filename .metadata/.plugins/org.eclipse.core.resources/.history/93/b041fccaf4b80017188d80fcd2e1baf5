@@ -57,7 +57,7 @@ public class LoginPageFactory {
 	
 	public void clicksumitButton() {
 		WebDriverWait wait = new WebDriverWait(driver, 3);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("submitButton")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signin-password")));
 		sumitButtonTab.click();
 	}
 

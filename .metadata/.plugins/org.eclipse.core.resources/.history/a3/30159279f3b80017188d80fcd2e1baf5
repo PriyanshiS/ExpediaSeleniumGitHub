@@ -33,31 +33,24 @@ public class LoginPageFactory {
 	
 	public void clickAccountTab() {
 		WebDriverWait wait = new WebDriverWait(driver, 3);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("header-account-menu")));
+		WebElement emailField = wait.until(
+		ExpectedConditions.visibilityOfElementLocated(By.id("header-account-menu"));
 		accountTab.click();
 	}
 	
 	public void clickSignInTab() {
-		WebDriverWait wait = new WebDriverWait(driver, 3);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("header-account-signin-button")));
 		signinTab.click();
 	}
 	
 	public void setUsernameField(String username) {
-		WebDriverWait wait = new WebDriverWait(driver, 3);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signin-loginid")));
 		usernameField.sendKeys(username);
 	}
 	
 	public void setPasswordField(String password) {
-		WebDriverWait wait = new WebDriverWait(driver, 3);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signin-password")));
 		passwordField.sendKeys(password);
 	}
 	
 	public void clicksumitButton() {
-		WebDriverWait wait = new WebDriverWait(driver, 3);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("submitButton")));
 		sumitButtonTab.click();
 	}
 
